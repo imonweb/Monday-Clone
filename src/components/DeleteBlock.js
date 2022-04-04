@@ -1,8 +1,18 @@
 import React from 'react'
 
 const DeleteBlock = () => {
+  const deleteTicket = () => {
+    console.log('deleteTicket')
+  }
   return (
-    <div>DeleteBlock</div>
+    <div className='delete-block'>
+      <div 
+        className="delete-icon"
+        onClick={deleteTicket}  
+      >
+        ⨂ 
+      </div>
+    </div>
   )
 }
 
